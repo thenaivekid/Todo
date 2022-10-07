@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{% static 'tasks/styles.css' %}">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Todo</title>
+</head>
+<body>
+    <div id="branding">
+        <h1>ToDo List</h1>
+    </div>
+        {% block body %}
+        {% endblock %}
+    </div>
+
+    <div id="footer">
+        © All rights reserved. Ashok Neupane 2022.
+    </div>
+    
+    
+</body>
+</html>

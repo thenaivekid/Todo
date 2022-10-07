@@ -1,0 +1,26 @@
+{% extends "tasks/layout.html" %}
+{% block body %}
+
+    <div class="content">
+        <ul>
+            {% for task in tasks %}
+            <form action="{% url 'index' %}" method="POST">
+                {% csrf_token %}
+                <li>
+                    <div id="task">{{task}} </div>
+                    <div id="status">{{form}}
+                        <input type="submit">
+                    </div>
+
+                </li>
+            </form>
+            
+            {% empty %}
+                No tasks added yet.
+            {% endfor %}
+        </ul>
+    </div>
+	<h3><a href="{% url 'add' %}">Add task</a></h3>
+    
+
+{% endblock %}

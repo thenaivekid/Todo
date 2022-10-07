@@ -1,0 +1,38 @@
+body{
+    background-color: #be9fe1;
+    text-align: center;
+    font-family: sans-serif;
+    display: grid;
+    justify-content: space-around;
+}
+
+#branding{
+    padding: 10px;
+}
+
+#footer,#branding{
+    width: 500px;
+    color: #d66175;
+    background-color: #e1ccec;
+}
+
+.content{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #c9b6e4;
+    color: rgb(9, 92, 16);
+    font-size: large;
+    font-weight: bold;
+    height: 450px;
+}
+
+#status{
+    font-weight: 100;
+    font-size: small;
+}
+li{
+    display: flex;
+    justify-content: space-between;
+}
